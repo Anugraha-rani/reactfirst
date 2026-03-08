@@ -1,0 +1,188 @@
+.headsec{
+  text-decoration: none;
+ color: white;
+}
+.headsec:hover{
+  color: rgb(5, 5, 165);
+  border: solid 1px white;
+  border-radius: 10px;
+}
+#navbar{
+  background-color: rgb(1, 1, 36);
+}
+#profilepart{
+  width: 600px;
+ margin-top: 90px;
+ margin-left: 100px;
+}
+#imgpart{
+width: 500px;
+transition: 3s;
+background: transparent;
+height: 100%;
+margin-top: 70px;
+}
+#imgpart:hover{
+background-color: rgb(1, 1, 36);
+opacity: .4;
+}
+#photo{
+  border-radius: 50%;
+  width: 450px;
+ 
+
+}
+#btndec{
+ background-color: rgb(5, 5, 165);
+color: white;
+  padding: 8px 8px;
+  border-radius: 10px;
+  border: solid  rgb(5, 5, 165);
+}
+
+.fonts{
+  font-size: 30px;
+}
+#homeicons a{
+  border: 2px solid rgb(5, 5, 165);
+  border-radius: 50%;
+  padding: 5px 5px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#homeicons a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgb(5, 5, 165);
+  border-radius: 50%;
+  z-index: -1;
+  transition: .5s;
+}
+#homeicons a:hover::before{
+width: 100%;
+}
+h2{
+  margin-top: 70px;
+  text-align: center;
+  
+}
+#aboutimg{
+  position: relative;
+}
+#aboutimg img{
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+  border: 2px solid rgb(5, 5, 165);
+}
+.paraabout{
+  padding: 0 100px;
+}
+#skilltop{
+  padding: 0px 100px;
+  
+}
+#skillsection{
+  margin-top: 50px;
+  border: 2px solid rgb(5, 5, 165);
+  padding: 30px 100px;
+  position: relative;
+  
+}
+#progress{
+  padding: 1rem,0;
+}
+#progress h3{
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+#progress h3 span{
+  color: white;
+}
+#progress .bar{
+  height: 1.8rem;
+  border-radius: .6rem;
+  border: 1px solid rgb(5, 5, 165);
+  padding: .5rem;
+  margin: 1rem 0;
+}
+#progress .bar span{
+  display: block;
+  height: 100%;
+  border-radius: .3rem;
+  background: rgb(5, 5, 165);
+}
+#first{
+  width: 90%;
+}
+#second{
+  width: 85%;
+}
+#third{
+  width: 78%;
+}
+#skillbutton{
+  border: none;
+  background: none;
+  padding: 0;
+}
+#formdiv{
+  
+  margin-top: 50px;
+}
+#forms{
+  border: solid 2px rgb(5, 5, 165);
+  padding: 30px 30px;
+  width: 100%;
+ 
+}
+.inputfield{
+  padding: 10px 100px;
+}
+#thumbsup{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 50px;
+}
+.footer{
+  color: rgb(167, 165, 165);
+  padding: 0 20px;
+}
+#skillsection {
+  
+  background: linear-gradient(
+    180deg,
+    #022c6b,
+    #010a18,
+    #0d6efd
+  );
+
+  background-size: 100% 300%;
+  animation: waterFlow 4s linear infinite;
+}
+
+@keyframes waterFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@media(max-width:800px){
+  #skillsection{
+    width: 100%;
+  }
+}
